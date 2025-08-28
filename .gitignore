@@ -1,1 +1,26 @@
+cat > .gitignore <<'EOF'
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Virtualenvs
+venv/
+.venv/
+env/
+
+# Env files / secrets
 .env
+.env.* 
+
+# Caches & runtime
+.cache/
+cache/
+*.sqlite3
+*.log
+
+# macOS / editors
+.DS_Store
+.vscode/
+.idea/
+EOF
